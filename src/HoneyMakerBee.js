@@ -1,21 +1,23 @@
 var HoneyMakerBee = function() {
+
   Bee.call(this);
 
   this.age = 10;
-  this.job = "make honey";
+  this.job = 'make honey';
   this.honeyPot = 0;
-}
+  };
 
-HoneyMakerBee.prototype = Object.create(Grub.prototype);
+HoneyMakerBee.prototype = Object.create(Bee.prototype);
 HoneyMakerBee.prototype.constructor = HoneyMakerBee;
 
-HoneyMakerBee.prototype.makeHoney = function(){
+HoneyMakerBee.prototype.makeHoney = function() {
   this.honeyPot++;
-}
+};
 
-HoneyMakerBee.prototype.giveHoney = function(){
+HoneyMakerBee.prototype.giveHoney = function() {
   this.honeyPot--;
-}
+};
+© 2019 Git
 
 /*Create a HoneyMakerBee class, in pseudoclassical style, with:
 call the Bee superclass

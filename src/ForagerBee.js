@@ -1,19 +1,19 @@
 var ForagerBee = function() {
+
   Bee.call(this);
 
   this.age = 10;
-  this.job = "find polen";
   this.canFly = true;
+  this.job = 'find pollen';
   this.treasureChest = [];
-  
-}
+  };
 
 ForagerBee.prototype = Object.create(Bee.prototype);
 ForagerBee.prototype.constructor = ForagerBee;
 
-ForagerBee.prototype.forage = function(treasure){
-  this.treasureChest.push(treasure)++;
-}
+ForagerBee.prototype.forage = function(treasure) {
+  this.treasureChest.push(treasure);
+};
 
 
 /* Create a ForagerBee class, in pseudoclassical style, with:

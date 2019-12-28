@@ -1,25 +1,23 @@
-var RetiredForager = function() {
+var RetiredForagerBee = function() {
+
   ForagerBee.call(this);
 
   this.age = 40;
-  this.job = "make honey";
-  this.honeyPot = 0;
+  this.color = 'grey';
   this.canFly = false;
-  this.color = grey;
-}
+  this.job = 'gamble';
+  };
 
-RetiredForager.prototype = Object.create(ForagerBee.prototype);
-RetiredForager.prototype.constructor = RetiredForager;
+RetiredForagerBee.prototype = Object.create(ForagerBee.prototype);
+RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
-RetiredForager.prototype.forage = function(){
-  return "I am too old, let me play cards instead";
-}
+RetiredForagerBee.prototype.forage = function() {
+  return 'I am too old, let me play cards instead';
+};
 
-RetiredForager.prototype.gamble = function(treasure){
- //this.treasureChest.push(treasure);
- //Forage.prototype.forage.call(this, treasure);
-
-}
+RetiredForagerBee.prototype.gamble= function() {
+  this.treasureChest.push('Pollen chips');
+};
 
 /* call the ForagerBee superclass
  set the prototype
